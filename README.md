@@ -6,7 +6,7 @@
 3. Once done, running `gulp dev` will open a browser and will watch files for changes (and automatically reload the page).
 
 #### Page Creation
-When creating a page, create a new `.html` file in the views directory. When creating the CSS, make a `.scss` file in the `scss/` folder named `_FILENAME.scss` (FILENAME is the same name as your `.html` file).
+When creating a page, create a new `.html` file in the `views/` directory. When creating the CSS, make a `.scss` file in the `scss/` folder named `_FILENAME.scss` (FILENAME is the same name as your `.html` file).
 
 #### Gulp Tasks
 
