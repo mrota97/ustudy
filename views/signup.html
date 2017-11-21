@@ -61,48 +61,71 @@
                 <div class="card">
                     <div class="card-header">
                         <ul class="nav nav-tabs card-header-tabs">
-                            <li class="nav-item">
-                                <a class="nav-link active" href="#">Sign Up</a>
+                            <li class="nav-item active">
+                                <a data-toggle="tab" class="nav-link active" href="#signup">Sign Up</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="#">Log In</a>
+                                <a data-toggle="tab" class="nav-link" href="#login">Log In</a>
                             </li>
                         </ul>
                     </div>
                     <div class="card-body">
-                        <form id="needs-validation" novalidate>
-                            <div class="form-group">
-                                <label for="firstName">First name</label>
-                                <input type="text" class="form-control" id="firstName" placeholder="First name" required>
+                        <div class="tab-content">
+                            <div id="signup" class="tab-pane fade in active show">
+                                <form id="needs-validation" novalidate>
+                                    <div class="form-group">
+                                        <label for="firstName">First name</label>
+                                        <input type="text" class="form-control" id="firstName" placeholder="First name" required>
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="lastName">Last name</label>
+                                        <input type="text" class="form-control" id="lastName" placeholder="Last name" required>
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="emailAddr">Email address</label>
+                                        <input type="email" class="form-control" id="emailAddr" aria-describedby="emailHelp" placeholder="Enter email" required>
+                                        <div class="invalid-feedback">
+                                            Please provide a valid email address.
+                                        </div>
+                                        <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="passwd">Password</label>
+                                        <input type="password" class="form-control" id="passwd" placeholder="Enter password" required>
+                                    </div>
+                                    <div class="form-group">
+                                            <label for="passwdCheck">Retype password</label>
+                                            <input type="password" class="form-control" id="passwdCheck" placeholder="Retype password" required>
+                                        </div>
+                                    <div class="form-check">
+                                        <label class="form-check-label">
+                                        <input type="checkbox" class="form-check-input">
+                                        Remember me
+                                        </label>
+                                    </div>
+                                    <button type="submit" class="btn btn-primary">Sign Up</button>
+                                </form>
                             </div>
-                            <div class="form-group">
-                                <label for="lastName">Last name</label>
-                                <input type="text" class="form-control" id="lastName" placeholder="Last name" required>
+                            <div id="login" class="tab-pane fade in">
+                                <form>
+                                    <div class="form-group">
+                                        <label for="loginEmailAddr">Email address</label>
+                                        <input type="email" class="form-control" id="loginEmailAddr" placeholder="Enter email">
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="loginPasswd">Password</label>
+                                        <input type="password" class="form-control" id="loginPasswd" placeholder="Enter password">
+                                    </div>
+                                    <div class="form-check">
+                                        <label class="form-check-label">
+                                            <input type="checkbox" class="form-check-input">
+                                            Remember me
+                                        </label>
+                                    </div>
+                                    <a class="btn btn-primary" href="dashboard.html" role="button">Log In</a>
+                                </form>
                             </div>
-                            <div class="form-group">
-                                <label for="emailAddr">Email address</label>
-                                <input type="email" class="form-control" id="emailAddr" aria-describedby="emailHelp" placeholder="Enter email" required>
-                                <div class="invalid-feedback">
-                                    Please provide a valid email address.
-                                </div>
-                                <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
-                            </div>
-                            <div class="form-group">
-                                <label for="passwd">Password</label>
-                                <input type="password" class="form-control" id="passwd" placeholder="Password" required>
-                            </div>
-                            <div class="form-group">
-                                    <label for="passwdCheck">Retype password</label>
-                                    <input type="password" class="form-control" id="passwdCheck" id="passwdCheck" placeholder="Password" required>
-                                </div>
-                            <div class="form-check">
-                                <label class="form-check-label">
-                                <input type="checkbox" class="form-check-input">
-                                Remember me
-                                </label>
-                            </div>
-                            <button type="submit" class="btn btn-primary">Sign Up</button>
-                        </form>
+                        </div>
 
 
                     </div>
@@ -121,18 +144,19 @@
             window.addEventListener('load', function() {
                 var form = document.getElementById('needs-validation');
                 form.addEventListener('submit', function(event) {
-                    event.preventDefault();
                     var passwd = document.getElementById('passwd').value;
                     var passwdCheck = document.getElementById('passwdCheck').value;
                     if (form.checkValidity() === false) {
                         event.preventDefault();
                         event.stopPropagation();
                     }
-                    if (passwd != passwdCheck) {
+                    else if (passwd != passwdCheck) {
                         alert("Passwords do not match!");
                     }
-                    form.classList.add('was-validated');
-                    window.location.href = "dashboard.html";
+                    else {
+                        form.classList.add('was-validated');
+                        window.location.href = "dashboard.html";
+                    }
                 }, false);
             }, false);
         })();
