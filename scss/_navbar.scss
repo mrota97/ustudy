@@ -41,7 +41,7 @@
     .navbar-brand {
       color: fade-out($white, .3);
       &:focus,
-      &:hover {
+      &:hover { 
         color: $white;
       }
     }

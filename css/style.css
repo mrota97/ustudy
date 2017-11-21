@@ -15,11 +15,11 @@
   min-width: 200px;
   max-width: 375px;
   padding-left: 100px;
-
+  white-space: nowrap;
 }
 
 body {
-   background-image: url("../../assets/USTUDY-bg.png");
+   background-image: url("../assets/USTUDY-bg.png");
 }
 
 
@@ -37,7 +37,7 @@ body {
 }
 
 h1{
-  background-image: url("../../assets/SINGLE_CLOUD.png") no-repeat center center;
+  background-image: url("../assets/SINGLE_CLOUD.png") no-repeat center center;
 }
 
 .w3-card-4{
