@@ -26,7 +26,7 @@ body{
   font-family: pixel-noir;
   src: local("Pixel Noir"),
        local("Pixel-Noir"),
-       url(Pixel-Noir.ttf);
+       url(assets/Pixel-Noir.ttf);
   font-weight: bold;
 }
 canvas{
