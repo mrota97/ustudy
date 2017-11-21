@@ -18,6 +18,10 @@
 
 }
 
+body {
+   background-image: url("../../assets/USTUDY-bg.png");
+}
+
 
 .course {
   padding-bottom: 100px  !important;
@@ -30,6 +34,10 @@
   display: inline-flex;
   width: 100%;
 
+}
+
+h1{
+  background-image: url("../../assets/SINGLE_CLOUD.png") no-repeat center center;
 }
 
 .w3-card-4{
