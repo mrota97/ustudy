@@ -1,0 +1,40 @@
+$enrolledCoursesColors: #ff5722, #4CAF50, #cddc39, #2196F3;
+$createdCoursesColors: $enrolledCoursesColors;
+$enrolledCourses: 10;
+$createdCourses: 10;
+
+
+@for $i from 1 through $enrolledCourses {
+    .row .enrolled-course:nth-child(#{$i}){
+        .card {
+            @if ($i % length($enrolledCoursesColors) == 0) {
+                background: nth($enrolledCoursesColors, length($enrolledCoursesColors));
+            }
+            @else {
+                background: nth($enrolledCoursesColors, ($i % 4));
+            }
+        }
+    }
+}
+
+@for $i from ($createdCourses) through 1 {
+    .row .created-course:nth-child(#{$i}) {
+        .card {
+            @if ($i % length($createdCoursesColors) == 0) {
+                background: nth($createdCoursesColors, length($createdCoursesColors));
+            }
+            @else {
+                background: nth($createdCoursesColors, ($i % 4));
+            }
+        }
+    }
+}
+
+.enrolled-course, .created-course {
+    padding: 3px 0px;
+    .card {
+        .card-body {
+            color: white;
+        }
+    }
+}
