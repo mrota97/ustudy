@@ -271,10 +271,28 @@ header.masthead {
 .row .created-course:nth-child(1) .card {
   background: #ff5722; }
 
+.course-header {
+  color: white;
+  padding: 3px 0px; }
+  .course-header > .card {
+    background: #b3b3b3; }
+    .course-header > .card > .card-body {
+      padding: inherit 0px;
+      align-items: center; }
+      .course-header > .card > .card-body > p {
+        margin: 0; }
+
 .enrolled-course, .created-course {
   padding: 3px 0px; }
   .enrolled-course .card .card-body, .created-course .card .card-body {
-    color: white; }
+    color: black;
+    background: white; }
+
+button:hover {
+  background-color: #e6e6e6;
+  -webkit-transition: background-color 100ms linear;
+  -ms-transition: background-color 100ms linear;
+  transition: background-color 100ms linear; }
 
 .text-primary {
   color: #F05F40 !important; }

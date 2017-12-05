@@ -30,11 +30,35 @@ $createdCourses: 10;
     }
 }
 
+.course-header {
+    color: white;
+    padding: 3px 0px;
+    > .card {
+        background: lighten(gray, 20%);
+        > .card-body {
+            padding: inherit 0px;
+            align-items: center;
+            > p {
+                margin: 0;
+            }
+        }
+    }
+}
+
 .enrolled-course, .created-course {
     padding: 3px 0px;
     .card {
         .card-body {
-            color: white;
+            color: black;
+            background: white;
         }
     }
+}
+
+button:hover {
+  // color: white;
+  background-color: lighten(gray, 40%);
+  -webkit-transition: background-color 100ms linear;
+  -ms-transition: background-color 100ms linear;
+  transition: background-color 100ms linear;
 }
