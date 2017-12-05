@@ -12,7 +12,7 @@ body {
   font-family: 'Merriweather', 'Helvetica Neue', Arial, sans-serif; }
 
 body.bg {
-  background-image: url("../assets/game-pattern.png"); }
+  background-image: url("../assets/USTUDY-bg.png"); }
 
 body.dark-bg {
   background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url("../assets/USTUDY-bg.png"); }
@@ -31,7 +31,7 @@ a {
   -moz-transition: all 0.2s;
   transition: all 0.2s; }
   a:hover {
-    color: #EFB93F; }
+    color: #efb93f; }
 
 h1,
 h2,
@@ -89,7 +89,7 @@ body {
     color: #EFB93F;
     font-family: 'Open Sans', 'Helvetica Neue', Arial, sans-serif; }
     #mainNav .navbar-brand:focus, #mainNav .navbar-brand:hover {
-      color: #EFB93F; }
+      color: #efb93f; }
   #mainNav .navbar-nav > li.nav-item > a.nav-link,
   #mainNav .navbar-nav > li.nav-item > a.nav-link:focus {
     font-size: .9rem;
@@ -128,7 +128,7 @@ body {
         #mainNav.navbar-shrink .navbar-brand {
           color: #EFB93F; }
           #mainNav.navbar-shrink .navbar-brand:focus, #mainNav.navbar-shrink .navbar-brand:hover {
-            color: #EFB93F; }
+            color: #efb93f; }
         #mainNav.navbar-shrink .navbar-nav > li.nav-item > a.nav-link,
         #mainNav.navbar-shrink .navbar-nav > li.nav-item > a.nav-link:focus {
           color: #212529; }
@@ -184,7 +184,7 @@ header.masthead {
     text-align: center;
     opacity: 0;
     color: #fff;
-    background: rgba(240, 95, 64, 0.9);
+    background: rgba(239, 185, 63, 0.9);
     -webkit-transition: all 0.2s;
     -moz-transition: all 0.2s;
     transition: all 0.2s; }
@@ -317,6 +317,6 @@ button:focus {
   border-color: #EFB93F; }
   .btn-primary:hover, .btn-primary:focus, .btn-primary:active {
     color: #fff;
-    background-color: #ee4b28 !important; }
+    background-color: #edb027 !important; }
   .btn-primary:active, .btn-primary:focus {
     box-shadow: 0 0 0 0.2rem rgba(240, 95, 64, 0.5) !important; }
