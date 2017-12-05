@@ -2,7 +2,11 @@
 header.masthead {
   padding-top: 10rem;
   padding-bottom: calc(10rem - 56px);
-  background-image: url('../img/header.jpg');
+  background-image:
+  linear-gradient(
+  rgba(0, 0, 0, 0.3),
+  rgba(0, 0, 0, 0.3)
+  ), url("../views/overworld/assets/land_0_blurred.png");
   background-position: center center;
   @include background-cover;
   hr {
