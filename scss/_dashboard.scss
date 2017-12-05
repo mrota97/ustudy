@@ -3,7 +3,6 @@ $createdCoursesColors: $enrolledCoursesColors;
 $enrolledCourses: 10;
 $createdCourses: 10;
 
-
 @for $i from 1 through $enrolledCourses {
     .row .enrolled-course:nth-child(#{$i}){
         .card {
@@ -32,17 +31,6 @@ $createdCourses: 10;
 
 .course-header {
     color: white;
-    padding: 3px 0px;
-    > .card {
-        background: lighten(gray, 20%);
-        > .card-body {
-            padding: inherit 0px;
-            align-items: center;
-            > p {
-                margin: 0;
-            }
-        }
-    }
 }
 
 .enrolled-course, .created-course {
@@ -58,7 +46,19 @@ $createdCourses: 10;
 button:hover {
   // color: white;
   background-color: lighten(gray, 40%);
+  cursor: pointer;
   -webkit-transition: background-color 100ms linear;
   -ms-transition: background-color 100ms linear;
   transition: background-color 100ms linear;
+}
+
+button:active {
+  background-color: lighten(gray, 30%);
+  -webkit-transition: background-color 100ms linear;
+  -ms-transition: background-color 100ms linear;
+  transition: background-color 100ms linear;
+}
+
+button:focus {
+  outline: none;
 }
