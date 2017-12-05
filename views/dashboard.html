@@ -10,183 +10,131 @@
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
   <title>UStudy - Dashboard</title>
 
-  <!-- Bootstrap core CSS -->
-  <link href="../css/startbootstrap-2-col-portfolio-gh-pages/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
-
-  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
   <!-- Custom styles for this template -->
-  <link href="../css/2-col-portfolio.css" rel="stylesheet">
-  <link href="../css/style.css" rel="stylesheet">
+  <link href="../css/creative.min.css" rel="stylesheet">
+
 
 </head>
-<body class= "w3-khaki">
+<body class="dark-bg">
+  <nav class="navbar navbar-expand-lg navbar-light bg-light " >
+      <div class="container">
+        <a class="navbar-brand" href="#">
+          <img src="overworld/assets/Banner_black_med.png"  height="50px" class="d-inline-block align-top" alt="">
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarResponsive">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item active">
+              <a class="nav-link" href="../signup.html">Sign Out
+                <span class="sr-only">(current)</span>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="dashboard.html">Dashboard</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="overworld/index.html">Overworld</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
 
-  <nav class="navbar navbar-expand-lg navbar-dark bg-primary fixed-top" style="border-bottom: 1px solid white; border-top: 1px solid white">
     <div class="container">
-      <a class="navbar-brand" href="#">
-        <img src="../assets/logo2_md.png" />
-      </a>
-      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse" id="navbarResponsive">
-        <ul class="navbar-nav ml-auto">
-          <li class="nav-item active">
-            <a class="nav-link" href="#">Home
-              <span class="sr-only">(current)</span>
-            </a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">About</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">Contact</a>
-          </li>
-        </ul>
-      </div>
+        <div class="row">
+            <div class="col-md-12 col-lg-4 offset-lg-1">
+                <div class="row">
+                    <!-- Enrolled Courses -->
+                    <div class="col-lg-12">
+                      <h1 class="course-header text-center">Enrolled Courses</h1>
+                      <hr>
+                    </div>
+                    <div class="col-lg-12 enrolled-course">
+                        <div class="card">
+                            <h4 class="card-header text-center">CS-545</h4>
+                            <div class="card-body">
+                                <p class="text-center">Human Computer Interation.</p>
+                            </div>
+                            <ul class="list-group list-group-flush">
+                                <button class="list-group-item text-center">Click Me</button>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-lg-12 enrolled-course">
+                        <div class="card">
+                            <h4 class="card-header text-center">MA-122</h4>
+                            <div class="card-body">
+                                <p class="text-center">Integral Calculus</p>
+                            </div>
+                            <ul class="list-group list-group-flush">
+                                <button class="list-group-item text-center">Click Me</button>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-lg-12 enrolled-course">
+                        <div class="card">
+                            <h4 class="card-header text-center">BT-453</h4>
+                            <div class="card-body">
+                                <p class="text-center">Social Networks: A Marketing Perspective</p>
+                            </div>
+                            <ul class="list-group list-group-flush">
+                                <button class="list-group-item text-center">Click Me</button>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-lg-12 enrolled-course">
+                        <div class="card">
+                          <h4 class="card-header text-center">PEP-503</h4>
+                          <div class="card-body">
+                              <p class="text-center">Introduction to Solid State Physics</p>
+                          </div>
+                          <ul class="list-group list-group-flush">
+                              <button class="list-group-item text-center">Click Me</button>
+                          </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-12 col-lg-4 offset-lg-1">
+                <div class="row">
+                    <!-- Created Courses -->
+                    <div class="col-lg-12 course-heading">
+                      <h1 class="course-header text-center">Created Courses</h1>
+                      <hr>
+                    </div>
+                    <div class="col-lg-12 created-course">
+                      <div class="card">
+                        <h4 class="card-header text-center">CS-545</h4>
+                        <div class="card-body">
+                            <p class="text-center">Human Computer Interation.</p>
+                        </div>
+                        <ul class="list-group list-group-flush">
+                            <button class="list-group-item text-center">Click Me</button>
+                        </ul>
+                      </div>
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
-  </nav>
 
-  <center>
-    <div class="course-box">
-    <div class="container margintesting">
-      <h1 class="col-heading leftcol" style="color: black"><b>Enrolled</b></h1>
-      <div class="course">
-        <div class="container margin-fix">
-          <div class="row align-items-start">
-            <div class="w3-container margin-testing">
-              <div class="w3-card-4 w3-deep-orange">
-                <header class="w3-container">
-                  <h3>CS545</h3>
-                </header>
-                <div class="w3-container">
-                  <hr>
-                  <!--  <img src="UNGLAZED_BLACK_BIG_1.jpg" alt="Avatar" class="w3-left w3-circle w3-margin-right" style="width:60px"> -->
-                  <p>Human Computer Interaction.</p><br>
-                </div>
-                <button class="w3-button  w3-block w3-orange">+ View</button>
-              </div>
-            </div>
+    <script src="../node_modules/jquery/dist/jquery.js"></script>
 
-          </div>
-        </div>
-      </div>
-      <div class="course">
-        <div class="container margin-fix">
-          <div class="row align-items-start">
-            <div class="w3-container margin-testing">
-              <div class="w3-card-4 w3-green">
-                <header class="w3-container">
-                  <h3>MA 122</h3>
-                </header>
-                <div class="w3-container">
-                  <hr>
-                  <!--  <img src="UNGLAZED_BLACK_BIG_1.jpg" alt="Avatar" class="w3-left w3-circle w3-margin-right" style="width:60px"> -->
-                  <p>Integral Calculus</p><br>
-                </div>
-                <button class="w3-button w3-block w3-orange">+ View</button>
-              </div>
-            </div>
-
-          </div>
-
-        </div>
-      </div>
-      <div class="course">
-        <div class="container margin-fix">
-          <div class="row align-items-start">
-            <div class="w3-container margin-testing">
-              <div class="w3-card-4 w3-lime">
-                <header class="w3-container">
-                  <h3 style="color:white">BT 435</h3>
-                </header>
-                <div class="w3-container">
-                  <hr>
-                  <!--  <img src="UNGLAZED_BLACK_BIG_1.jpg" alt="Avatar" class="w3-left w3-circle w3-margin-right" style="width:60px"> -->
-                  <p style="color:white">Social Networks: a Marketing Perspective</p><br>
-                </div>
-                <button class="w3-button w3-block w3-orange">+ View</button>
-              </div>
-            </div>
-
-          </div>
-
-        </div>
-      </div>
-      <div class="course">
-        <div class="container margin-fix">
-          <div class="row align-items-start">
-            <div class="w3-container margin-testing">
-              <div class="w3-card-4 w3-blue">
-                <header class="w3-container">
-                  <h3>PEP 503</h3>
-                </header>
-                <div class="w3-container">
-                  <hr>
-                  <!--  <img src="UNGLAZED_BLACK_BIG_1.jpg" alt="Avatar" class="w3-left w3-circle w3-margin-right" style="width:60px"> -->
-                  <p>Introduction to Solid State Physics</p><br>
-                </div>
-                <button class="w3-button w3-block w3-orange">+ View</button>
-              </div>
-            </div>
-
-          </div>
-
-        </div>
-      </div>
-    </div>
-    <div class="container margintesting">
-      <h1 class = "col-heading" style="color:black"><b>Created Courses</b></h1>
-      <div class="course">
-        <div class="w3-card-4 w3-black">
-          <header class="w3-container">
-            <h3>CS 545</h3>
-          </header>
-          <div class="w3-container">
-            <hr>
-            <!--  <img src="UNGLAZED_BLACK_BIG_1.jpg" alt="Avatar" class="w3-left w3-circle w3-margin-right" style="width:60px"> -->
-            <p>Human Computer Interaction</p><br>
-          </div>
-          <button class="w3-button w3-block w3-orange">+ View</button>
-        </div>
-      </div>
-        <div class="course">
-        <div class="w3-card-4 w3-blue">
-            <div class="w3-container">
-                <button class="w3-button w3-block w3-orange"><a href="course-creation/course-creation.html">CREATE A QUIZ</a></button>
-            </div>
-        </div>
-      </div>
-    </div>
-  </div>
-</center>
-
-
-
-
-<button class="w3-blue-grey" onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
-<!-- <script>
-// When the user scrolls down 20px from the top of the document, show the button
-window.onscroll = function() {scrollFunction()};
-
-function scrollFunction() {
-if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
-document.getElementById("myBtn").style.display = "block";
-} else {
-document.getElementById("myBtn").style.display = "none";
-}
-}
-
-// When the user clicks on the button, scroll to the top of the document
-function topFunction() {
-document.body.scrollTop = 0; // For Chrome, Safari and Opera
-document.documentElement.scrollTop = 0; // For IE and Firefox
-}
-</script> -->
-<script src="../css/startbootstrap-2-col-portfolio-gh-pages/vendor/jquery/jquery.min.js"></script>
-<script src="../css/startbootstrap-2-col-portfolio-gh-pages/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
-
+    <script>
+        $(function(){
+            $(window).resize(function () {
+                $('body').css('padding-top', $('.navbar').heigh()+10);
+            });
+            $(window).load(function () {
+                $('body').css('padding-top', $('.navbar').heigh()+10);
+            });
+        });
+    </script>
 </body>
-
 
 </html>
