@@ -285,20 +285,23 @@ header.masthead {
     color: black;
     background: white; }
 
-button:hover {
+a {
+  color: black !important; }
+
+a:hover {
   background-color: #e6e6e6;
   cursor: pointer;
   -webkit-transition: background-color 100ms linear;
   -ms-transition: background-color 100ms linear;
   transition: background-color 100ms linear; }
 
-button:active {
+a:active {
   background-color: #cdcdcd;
   -webkit-transition: background-color 100ms linear;
   -ms-transition: background-color 100ms linear;
   transition: background-color 100ms linear; }
 
-button:focus {
+a:focus {
   outline: none; }
 
 .text-primary {

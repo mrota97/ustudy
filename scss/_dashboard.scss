@@ -43,7 +43,11 @@ $createdCourses: 10;
     }
 }
 
-button:hover {
+a {
+  color: black !important;
+}
+
+a:hover {
   // color: white;
   background-color: lighten(gray, 40%);
   cursor: pointer;
@@ -52,13 +56,13 @@ button:hover {
   transition: background-color 100ms linear;
 }
 
-button:active {
+a:active {
   background-color: lighten(gray, 30%);
   -webkit-transition: background-color 100ms linear;
   -ms-transition: background-color 100ms linear;
   transition: background-color 100ms linear;
 }
 
-button:focus {
+a:focus {
   outline: none;
 }
