@@ -103,7 +103,7 @@
                                         Remember me
                                         </label>
                                     </div>
-                                    <button type="submit" class="btn btn-primary">Sign Up</button>
+                                    <a class="btn btn-primary" href="dashboard.html" role="button">Log In</a>
                                 </form>
                             </div>
                             <div id="login" class="tab-pane fade in">
@@ -135,7 +135,7 @@
         <div class="row">
             <div class="col-sm-12"></div>
         </div>
-    </div> 
+    </div>
 
     <script>
         (function() {
@@ -144,14 +144,9 @@
             window.addEventListener('load', function() {
                 var form = document.getElementById('needs-validation');
                 form.addEventListener('submit', function(event) {
-                    var passwd = document.getElementById('passwd').value;
-                    var passwdCheck = document.getElementById('passwdCheck').value;
                     if (form.checkValidity() === false) {
                         event.preventDefault();
                         event.stopPropagation();
-                    }
-                    else if (passwd != passwdCheck) {
-                        alert("Passwords do not match!");
                     }
                     else {
                         form.classList.add('was-validated');
