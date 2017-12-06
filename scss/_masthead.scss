@@ -6,9 +6,10 @@ header.masthead {
   linear-gradient(
   rgba(0, 0, 0, 0.3),
   rgba(0, 0, 0, 0.3)
-  ), url("../views/overworld/assets/land_0_blurred.png");
-  background-position: center center;
-  @include background-cover;
+  ), url("../assets/blue_bg.png");
+  background-repeat: repeat;
+  // background-position: center center;
+  // @include background-cover;
   hr {
     margin-top: 30px;
     margin-bottom: 30px;
