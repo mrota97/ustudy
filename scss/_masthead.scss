@@ -17,8 +17,18 @@ header.masthead {
   h1 {
     font-size: 2rem;
   }
+  #splash{
+    font-family: Dominik;
+  }
   p {
     font-weight: 300;
+  }
+  @font-face {
+    font-family: Dominik;
+    src: local("Dominik"),
+         local("Dominik"),
+         url(../assets/Dominik.ttf);
+    font-weight: bold;
   }
   @media (min-width: 768px) {
     p {
